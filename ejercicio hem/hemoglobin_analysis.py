@@ -13,7 +13,7 @@ El programa:
 import json
 
 # Leer la secuencia desde el archivo
-with open("hemoglobin_clean.txt", "r") as file:
+with open("ejercicio hem/hemoglobin_clean.txt", "r") as file:
     sequence = file.read().strip()
 
 # Información básica
@@ -78,7 +78,7 @@ resultados = {
 "hydrophobic_percentage": porcentaje_hidrofobico
 }
 
-with open("hemoglobin_results.json", "w") as file:
+with open("ejercicio hem/hemoglobin_results.json", "w") as file:
     json.dump(resultados, file, indent=4)
 
 print("\nResultados guardados en hemoglobin_results.json")
